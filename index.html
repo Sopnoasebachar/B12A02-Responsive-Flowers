@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display&family=Roboto:wght@400;500;700&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display&family=Roboto:wght@400;500;700&display=swap');
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+
+  <title>Responsive Website</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="nav-list flex justify-between items-center md:px-[150px] sm:px-[30px] py-[24.5px]">
+      <img src="./assets/logo.png" alt="">
+      <ul class="lg:flex justify-between items-center gap-[48px]">
+        <li class="font-[700] lg:block hidden md:block"><a href="#">Home</a></li>
+        <li class="hidden lg:block md:block"><a href="#">Shop</a></li>
+        <li class="hidden lg:block md:block"><a href="#">About Us</a></li>
+        <li><a href="#" class="font-[600]"><i class="fa fa-shopping-cart font-[bold]"></i>
+            <span>Cart ($56)</span></a></li>
+      </ul>
+
+    </div>
+    <div
+      class="banner flex justify-between items-end md:px-[150px]  py-[24.5px] sm:flex-col-reverse md:flex-row lg:h-[461px]"
+      style="font-family: 'Playfair Display', serif;">
+      <div class="banner-text sm:w-full lg:w-[570px] sm:px-[20px]">
+        <p class="text-[65px] font-[700]">ALWAYS <span class="text-[#E95A08]">FRESH FLOWERS</span></p>
+        <P class="text-[rgba(0,0,0,0.5)]">Indulge your senses with the beauty and fragrance of our fresh flower shop.
+          From classic roses to exotic
+          blooms, we
+          offer a wide variety of fresh flowers that are perfect for any occasion.</P>
+      </div>
+      <img src="/assets/hero-flower.png" class="sm:w-full h-[355px] lg:w-[570px]" alt="">
+    </div>
+  </header>
+  <main>
+    <section class="md:px-[150px]  py-[24.5px] sm:text-center sm:pl-[20px]"
+      style="font-family: 'Playfair Display', serif;">
+      <p class="text-[50px] font-[bold]" style="font-family: 'Playfair Display', serif;"> <span
+          class="text-[#E95A08]">Our </span> Plants</p>
+      <p class="sm:mx-[auto] sm:my-[0px] sm:w-[450px] text-[rgba(0,0,0,0.5)] lg:w-[800px]">Indulge your senses with the
+        beauty and
+        fragrance of our fresh
+        flower shop.
+        From classic
+        roses to exotic
+        blooms, we
+        offer a wide variety of fresh.</p>
+
+      <div class="carts grid lg:grid-cols-4 gap-x-[30px] gap-y-[20px]  mt-[30px] sm:grid-cols-2 sm:gap-x-[10px] ">
+        <div class="cart flex flex-col w-[270px]">
+          <img src="/assets/sample-flower-image.png" alt="" class="w-[100%]">
+          <span class="text-center">Lilly Blosum</span>
+          <span class="text-center">20 USD</span>
+          <button class="w-[100%] bg-[#E95A08] text-[#FFFFFF] px-[50px] py-[10px]">ADD TO CART</button>
+        </div>
+        <div class="cart flex flex-col w-[270px]">
+          <img src="/assets/sample-flower-image.png" alt="" class="w-[100%]">
+          <span class="text-center">Lilly Blosum</span>
+          <span class="text-center">20 USD</span>
+          <button class="w-[100%] bg-[#E95A08] text-[#FFFFFF] px-[50px] py-[10px]">ADD TO CART</button>
+        </div>
+        <div class="cart flex flex-col w-[270px]">
+          <img src="/assets/sample-flower-image.png" alt="" class="w-[100%]">
+          <span class="text-center">Lilly Blosum</span>
+          <span class="text-center">20 USD</span>
+          <button class="w-[100%] bg-[#E95A08] text-[#FFFFFF] px-[50px] py-[10px]">ADD TO CART</button>
+        </div>
+        <div class="cart flex flex-col w-[270px]">
+          <img src="/assets/sample-flower-image.png" alt="" class="w-[100%]">
+          <span class="text-center">Lilly Blosum</span>
+          <span class="text-center">20 USD</span>
+          <button class="w-[100%] bg-[#E95A08] text-[#FFFFFF] px-[50px] py-[10px]">ADD TO CART</button>
+        </div>
+        <div class="cart flex flex-col w-[270px]">
+          <img src="/assets/sample-flower-image.png" alt="" class="w-[100%]">
+          <span class="text-center">Lilly Blosum</span>
+          <span class="text-center">20 USD</span>
+          <button class="w-[100%] bg-[#E95A08] text-[#FFFFFF] px-[50px] py-[10px]">ADD TO CART</button>
+        </div>
+        <div class="cart flex flex-col w-[270px]">
+          <img src="/assets/sample-flower-image.png" alt="" class="w-[100%]">
+          <span class="text-center">Lilly Blosum</span>
+          <span class="text-center">20 USD</span>
+          <button class="w-[100%] bg-[#E95A08] text-[#FFFFFF] px-[50px] py-[10px]">ADD TO CART</button>
+        </div>
+        <div class="cart flex flex-col w-[270px]">
+          <img src="/assets/sample-flower-image.png" alt="" class="w-[100%]">
+          <span class="text-center">Lilly Blosum</span>
+          <span class="text-center">20 USD</span>
+          <button class="w-[100%] bg-[#E95A08] text-[#FFFFFF] px-[50px] py-[10px]">ADD TO CART</button>
+        </div>
+        <div class="cart flex flex-col w-[270px]">
+          <img src="/assets/sample-flower-image.png" alt="" class="w-[100%]">
+          <span class="text-center">Lilly Blosum</span>
+          <span class="text-center">20 USD</span>
+          <button class="w-[100%] bg-[#E95A08] text-[#FFFFFF] px-[50px] py-[10px]">ADD TO CART</button>
+        </div>
+      </div>
+
+
+    </section>
+  </main>
+</body>
+
+</html>
