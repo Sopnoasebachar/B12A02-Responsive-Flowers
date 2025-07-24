@@ -61,49 +61,49 @@
           <img src="assets/sample-flower-image.png" alt="" class="w-[100%]">
           <span class="text-center">Lilly Blosum</span>
           <span class="text-center">20 USD</span>
-          <button class="w-[100%] bg-[#E95A08] text-[#FFFFFF] px-[50px] py-[10px]">ADD TO CART</button>
+          <button class="w-[100%] bg-[#E95A08] text-[#FFFFFF] px-[50px] py-[10px] cart_btn">ADD TO CART</button>
         </div>
         <div class="cart flex flex-col">
           <img src="assets/sample-flower-image.png" alt="" class="w-[100%]">
           <span class="text-center">Lilly Blosum</span>
           <span class="text-center">20 USD</span>
-          <button class="w-[100%] bg-[#E95A08] text-[#FFFFFF] px-[50px] py-[10px]">ADD TO CART</button>
+          <button class="w-[100%] bg-[#E95A08] text-[#FFFFFF] px-[50px] py-[10px] cart_btn">ADD TO CART</button>
         </div>
         <div class="cart flex flex-col">
           <img src="assets/sample-flower-image.png" alt="" class="w-[100%]">
           <span class="text-center">Lilly Blosum</span>
           <span class="text-center">20 USD</span>
-          <button class="w-[100%] bg-[#E95A08] text-[#FFFFFF] px-[50px] py-[10px]">ADD TO CART</button>
+          <button class="w-[100%] bg-[#E95A08] text-[#FFFFFF] px-[50px] py-[10px] cart_btn">ADD TO CART</button>
         </div>
         <div class="cart flex flex-col">
           <img src="assets/sample-flower-image.png" alt="" class="w-[100%]">
           <span class="text-center">Lilly Blosum</span>
           <span class="text-center">20 USD</span>
-          <button class="w-[100%] bg-[#E95A08] text-[#FFFFFF] px-[50px] py-[10px]">ADD TO CART</button>
+          <button class="w-[100%] bg-[#E95A08] text-[#FFFFFF] px-[50px] py-[10px] cart_btn">ADD TO CART</button>
         </div>
         <div class="cart flex flex-col">
           <img src="assets/sample-flower-image.png" alt="" class="w-[100%]">
           <span class="text-center">Lilly Blosum</span>
           <span class="text-center">20 USD</span>
-          <button class="w-[100%] bg-[#E95A08] text-[#FFFFFF] px-[50px] py-[10px]">ADD TO CART</button>
+          <button class="w-[100%] bg-[#E95A08] text-[#FFFFFF] px-[50px] py-[10px] cart_btn">ADD TO CART</button>
         </div>
         <div class="cart flex flex-col">
           <img src="assets/sample-flower-image.png" alt="" class="w-[100%]">
           <span class="text-center">Lilly Blosum</span>
           <span class="text-center">20 USD</span>
-          <button class="w-[100%] bg-[#E95A08] text-[#FFFFFF] px-[50px] py-[10px]">ADD TO CART</button>
+          <button class="w-[100%] bg-[#E95A08] text-[#FFFFFF] px-[50px] py-[10px] cart_btn">ADD TO CART</button>
         </div>
         <div class="cart flex flex-col">
           <img src="assets/sample-flower-image.png" alt="" class="w-[100%]">
           <span class="text-center">Lilly Blosum</span>
           <span class="text-center">20 USD</span>
-          <button class="w-[100%] bg-[#E95A08] text-[#FFFFFF] px-[50px] py-[10px]">ADD TO CART</button>
+          <button class="w-[100%] bg-[#E95A08] text-[#FFFFFF] px-[50px] py-[10px] cart_btn">ADD TO CART</button>
         </div>
         <div class="cart flex flex-col">
           <img src="assets/sample-flower-image.png" alt="" class="w-[100%]">
           <span class="text-center">Lilly Blosum</span>
           <span class="text-center">20 USD</span>
-          <button class="w-[100%] bg-[#E95A08] text-[#FFFFFF] px-[50px] py-[10px]">ADD TO CART</button>
+          <button class="w-[100%] bg-[#E95A08] text-[#FFFFFF] px-[50px] py-[10px] cart_btn">ADD TO CART</button>
         </div>
       </div>
     </section>
@@ -112,7 +112,7 @@
       <div class="relative lg:w-[540px] w-[100%] lg:h-[600px]">
         <img src="assets/flower-store.png" alt="" class="w-[100%] h-full">
         <img src="assets/trusted-badge.png" alt=""
-          class="w-[200px] z-10 absolute top-[-100px] right-[-100px] hidden lg:block">
+          class="w-[200px] z-10 absolute top-[-100px] right-[-100px] hidden lg:block lg:animate-spin">
       </div>
       <div class="flex lg:w-[500px] w-[100%]  flex-col gap-[10px] px-[20px]">
         <p class="lg:text-[50px] font-[800] text-[35px]">Flower & Plants Lover</p>
@@ -208,6 +208,15 @@
       <img src="assets/icon-youtube.png" alt="" class="w-[36px] rounded-[50%]">
     </div>
   </footer>
+  <script>
+    btn = document.querySelectorAll('.cart_btn');
+    btn.forEach(element => {
+      element.style.cursor = "pointer";
+      element.addEventListener('click', () => {
+        alert('Flower Added to Cart');
+      })
+    });
+  </script>
 </body>
 
 </html>
